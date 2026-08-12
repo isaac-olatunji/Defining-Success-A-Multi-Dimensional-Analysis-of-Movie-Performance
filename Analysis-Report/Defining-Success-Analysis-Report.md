@@ -196,7 +196,7 @@ The analysis followed a structured Power BI workflow:
 
 ## Page 4: The Verdict — Synthesising Movie Success
 
-![The Verdict Dashboard](../Assets/screenshots/the-verdict/The_Verdict.png)
+![The Verdict Dashboard](../Assets/screenshots/the-verdict/the-verdict.png)
 
 ### KPI Overview
 
