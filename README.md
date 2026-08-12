@@ -217,7 +217,7 @@ This framework is the central output of the analysis and provides a more nuanced
 
 For the complete methodology, page-by-page dashboard walkthrough, visual analysis, detailed insights, and strategic recommendations:
 
-📖 **[View Full Analysis Report](Analysis-Report/Defining_Success_Analysis_Report.md)**
+📖 **[View Full Analysis Report](Analysis-Report/Defining-Success-Analysis-Report.md)**
 
 📄 [Download Full PDF Report](https://drive.google.com/file/d/1VD22lZf7qWX7-dnNxoRY1ZB2Ejow0FZg/view?usp=sharing)
 
