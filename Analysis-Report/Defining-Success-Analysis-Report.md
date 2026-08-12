@@ -49,11 +49,11 @@ The analysis followed a structured Power BI workflow:
 
 ## Page 1: Defining Success — Scale and Rating Overview
 
-![Defining Success Dashboard](Assets/screenshots/defining-success/defining-success.png)
+![Defining Success Dashboard](../Assets/screenshots/defining-success/defining-success.png)
 
 ### KPI Overview
 
-![KPI Cards](Assets/screenshots/defining-success/KPI-cards.png)
+[!KPI Cards](../Assets/screenshots/defining-success/KPI-cards.png)
 
 | Metric | Value |
 | --- | ---: |
@@ -76,7 +76,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Rated Movies by Rating Band
 
-![Rated Movies by Rating Band](Assets/screenshots/defining-success/Rated_Movies_by_Rating_Band.png)
+[!Rated Movies by Rating Band](../Assets/screenshots/defining-success/rated-movies-by-rating-band.png)
 
 | Rating Band | Rated Movies |
 | --- | ---: |
@@ -92,7 +92,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Rated Movies and Average Rating by Vote Band
 
-![Rated Movies and Average Rating by Vote Band](Assets/screenshots/defining-success/Rated_Movies_and_Average_Rating_by_Vote_Band.png)
+[!Rated Movies and Average Rating by Vote Band](../Assets/screenshots/defining-success/rated-movies-and-average-rating-by-vote-band.png)
 
 | Vote Band | Rated Movies | Avg Rating |
 | --- | ---: | ---: |
@@ -113,11 +113,11 @@ The analysis followed a structured Power BI workflow:
 
 ## Page 2: Commercial Success — Financial Performance
 
-![Commercial Success Dashboard](Assets/screenshots/commercial-success/Commercial_Success.png)
+![Commercial Success Dashboard](../Assets/screenshots/commercial-success/commercial-success.png)
 
 ### KPI Overview
 
-![Commercial KPI Cards](Assets/screenshots/commercial-success/KPI_Cards.png)
+[!Commercial KPI Cards](../Assets/screenshots/commercial-success/KPI-cards.png)
 
 | Metric | Value |
 | --- | ---: |
@@ -132,7 +132,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Revenue vs Financial Profit
 
-![Revenue vs Financial Profit](Assets/screenshots/commercial-success/Revenue_vs_Financial_Profit.png)
+[!Revenue vs Financial Profit](../Assets/screenshots/commercial-success/revenue-vs-financial-profit.png)
 
 **Insight:** The scatter plot reveals a heavily right-skewed distribution. The vast majority of financially observable movies cluster near $0bn in both revenue and profit — most films, even those with financial data, generate modest returns. A small number of outliers — visible as large isolated bubbles in the upper portion of the chart — account for a disproportionate share of total industry profit. One title in particular sits at approximately $25bn in financial profit on ~$1bn in revenue, representing an extraordinary outlier that alone materially inflates the aggregate ROI figure. The financial success of the movie industry is concentrated in very few films.
 
@@ -140,7 +140,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Movies Profitability Status
 
-![Movies Profitability Status](Assets/screenshots/commercial-success/Movies_Profitability_Status.png)
+[!Movies Profitability Status](../Assets/screenshots/commercial-success/movies-profitability-status.png)
 
 | Profitability Status | Movies |
 | --- | ---: |
@@ -154,7 +154,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Budget vs ROI
 
-![Budget vs ROI](Assets/screenshots/commercial-success/Budget_vs_ROI.png)
+[!Budget vs ROI](../Assets/screenshots/commercial-success/budget-vs-ROI.png)
 
 **Insight:** The Budget vs ROI scatter shows an inverse relationship — the highest ROI values are concentrated at the lowest budget levels. One extreme outlier at near-zero budget achieves an ROI approaching 5,000M, representing a micro-budget film that generated extraordinary returns relative to its cost. As budget increases toward $500M–$1bn, ROI compresses toward 0M and below for some titles. This confirms a pattern seen across creative industries: low-budget productions occasionally generate extraordinary relative returns, while large-budget productions tend toward more moderate or negative ROI. Scale does not guarantee efficiency.
 
@@ -162,11 +162,11 @@ The analysis followed a structured Power BI workflow:
 
 ## Page 3: Audience Success — Engagement and Perceived Quality
 
-![Audience Success Dashboard](Assets/screenshots/audience-success/Audience_Success.png)
+![Audience Success Dashboard](../Assets/screenshots/audience-success/Audience_Success.png)
 
 ### KPI Overview
 
-![Audience KPI Cards](Assets/screenshots/audience-success/KPI_Cards.png)
+[!Audience KPI Cards](../Assets/screenshots/audience-success/KPI-cards.png)
 
 | Metric | Value |
 | --- | ---: |
@@ -180,7 +180,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Audience Engagement
 
-![Audience Engagement](Assets/screenshots/audience-success/Audience_Engagement.png)
+[!Audience Engagement](../Assets/screenshots/audience-success/audience-engagement.png)
 
 **Insight:** The Audience Engagement scatter (Average Rating vs Popularity, bubble size = vote count) shows that popularity concentrates sharply in the 7–9 rating range. Below a rating of 6, almost no films achieve meaningful popularity scores. Above 7, a small number of films achieve extreme popularity (2,500–3,000+), while the dense cluster of well-rated films sits below 500 in popularity. This confirms that rating quality is a necessary but not sufficient condition for popularity — a film needs to be both good and culturally visible to achieve high engagement.
 
@@ -188,7 +188,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Audience Rating vs Financial Performance
 
-![Audience Rating vs Financial Performance](Assets/screenshots/audience-success/Audience_Rating_vs_Financial_Performance.png)
+[!Audience Rating vs Financial Performance](../Assets/screenshots/audience-success/audience-rating-vs-financial-performance.png)
 
 **Insight:** Plotting Average Rating against Financial Profit reveals a weak relationship. The majority of movies — regardless of their rating — cluster near $0bn in financial profit. High-rated films (8+) do appear in the profitable range, but so do average-rated films. The reference lines (median rating 6.39, median profit $148) confirm that most films land in the lower-left quadrant: below-median rating and near-zero profit. The upper-right quadrant — high rating, high profit — is sparsely populated, representing the genuinely exceptional films that succeed on both dimensions simultaneously.
 
@@ -196,11 +196,11 @@ The analysis followed a structured Power BI workflow:
 
 ## Page 4: The Verdict — Synthesising Movie Success
 
-![The Verdict Dashboard](Assets/screenshots/the-verdict/The_Verdict.png)
+![The Verdict Dashboard](../Assets/screenshots/the-verdict/The_Verdict.png)
 
 ### KPI Overview
 
-![Verdict KPI Cards](Assets/screenshots/the-verdict/KPI_Cards.png)
+[!Verdict KPI Cards](../Assets/screenshots/the-verdict/KPI-cards.png)
 
 | Metric | Value |
 | --- | ---: |
@@ -213,7 +213,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Success Matrix
 
-![Success Matrix](Assets/screenshots/the-verdict/Success_Matrix.png)
+[!Success Matrix](../Assets/screenshots/the-verdict/success-matrix.png)
 
 The Success Matrix plots Financial Profit (x-axis) against Average Rating (y-axis) with reference lines at median profit ($148) and median rating (6.39), creating four quadrants:
 
@@ -230,7 +230,7 @@ The Success Matrix plots Financial Profit (x-axis) against Average Rating (y-axi
 
 ### What Defines Success?
 
-![What Defines Success](Assets/screenshots/the-verdict/What_Defines_Success.png)
+[!What Defines Success](../Assets/screenshots/the-verdict/what-defines-success.png)
 
 The analysis concludes with three findings:
 
@@ -250,7 +250,7 @@ The analysis concludes with three findings:
 
 ### Key Learnings
 
-![Key Learnings](Assets/screenshots/the-verdict/Key_Learnings.png)
+[!Key Learnings](../Assets/screenshots/the-verdict/key-learnings.png)
 
 **Industry Exploration:** Diving into the movies and series sector showed how data can be used to understand performance in a creative industry — a domain where success is subjective but measurable patterns still emerge.
 
