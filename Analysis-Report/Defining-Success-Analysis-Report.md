@@ -49,11 +49,11 @@ The analysis followed a structured Power BI workflow:
 
 ## Page 1: Defining Success — Scale and Rating Overview
 
-![Defining Success Dashboard](Assets/screenshots/defining-success/Defining_Success.png)
+![Defining Success Dashboard](Assets/screenshots/defining-success/defining-success.png)
 
 ### KPI Overview
 
-![KPI Cards](Assets/screenshots/defining-success/KPI_Cards.png)
+![KPI Cards](Assets/screenshots/defining-success/KPI-cards.png)
 
 | Metric | Value |
 | --- | ---: |
@@ -68,7 +68,7 @@ The analysis followed a structured Power BI workflow:
 
 ### Released Movies by Year
 
-![Released Movies by Year](Assets/screenshots/defining-success/Released_movies_by_Year.png)
+![Released Movies by Year](Assets/screenshots/defining-success/released-movies-by-year.png)
 
 **Insight:** Movie production remained flat for most of recorded history, then accelerated sharply from the 1980s onward, peaking at approximately 50K releases per year around 2010. The sharp drop after ~2015 toward near-zero by 2025 reflects data recency lag — recent titles have not yet been fully catalogued in the dataset rather than an actual industry decline. The long historical tail (releases dating back to 1800) shows the breadth of the dataset but also signals that pre-1950 data is sparse.
 
