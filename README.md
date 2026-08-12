@@ -1,6 +1,6 @@
 # 🎬 Defining Success: A Multi-Dimensional Analysis of Movie Performance
 
-![Cover](Assets/cover/cover.svg)
+![Cover](Assets/cover/movie_cover.svg)
 
 **Tools:** Power BI · Power Query · DAX
 **Dataset:** TMDB — 1.4M+ movie records across ratings, revenue, budget, and audience engagement
@@ -251,5 +251,5 @@ defining-success-movie-analysis/
 **Isaac Olatunji**
 Business Intelligence Analyst focused on transforming data into actionable business insights through SQL, Power BI, Excel, and data storytelling.
 
-🔗 GitHub: [isaactheanalyst](https://github.com/isaactheanalyst)
+🔗 GitHub: [isaactheanalyst]([(https://github.com/isaac-olatunji)])
 🔗 LinkedIn: [olatunjiisaac](https://www.linkedin.com/in/olatunjiisaac)
