@@ -1,6 +1,6 @@
 # 🎬 Defining Success: A Multi-Dimensional Analysis of Movie Performance
 
-![Cover](Assets/cover/cover.svg)
+![Cover](Assets/screenshots/cover/cover.svg)
 
 **Tools:** Power BI · Power Query · DAX
 **Dataset:** TMDB — 1.4M+ movie records across ratings, revenue, budget, and audience engagement
