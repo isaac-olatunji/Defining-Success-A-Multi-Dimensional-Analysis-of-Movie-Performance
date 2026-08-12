@@ -162,7 +162,7 @@ The analysis followed a structured Power BI workflow:
 
 ## Page 3: Audience Success — Engagement and Perceived Quality
 
-![Audience Success Dashboard](../Assets/screenshots/audience-success/Audience_Success.png)
+![Audience Success Dashboard](../Assets/screenshots/audience-success/audience-success.png)
 
 ### KPI Overview
 
