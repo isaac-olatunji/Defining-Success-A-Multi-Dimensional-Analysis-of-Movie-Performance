@@ -4,6 +4,7 @@
 
 **Tools:** Power BI · Power Query · DAX
 **Dataset:** TMDB — 1.4M+ movie records across ratings, revenue, budget, and audience engagement
+**Competition:** Power BI DataViz World Championships — Final Round
 
 A Power BI analysis of 1.4M+ movie records exploring what makes a film successful across **audience reception, engagement, and financial performance** — culminating in a **Success Matrix** that evaluates performance across all three dimensions.
 
@@ -11,36 +12,32 @@ A Power BI analysis of 1.4M+ movie records exploring what makes a film successfu
 
 ## 📌 Project Overview
 
-What makes a movie successful?
+How do filmmakers, directors, writers, studios, and investors actually know whether a movie has been successful?
 
-Rather than defining success through a single metric such as ratings, revenue, or popularity, this project develops a **multi-dimensional framework** for evaluating movie performance across audience and financial dimensions.
+Revenue numbers take months to materialise. Audience ratings reflect a fraction of viewers. ROI can be extraordinary for a micro-budget film and near-zero for a blockbuster. And none of these measures tells the complete story on its own.
 
-The analysis uses Power BI to transform 1.4M+ TMDB movie records into an interactive analytical experience covering:
+Rather than defining success through a single metric, this project builds a **multi-dimensional analytical framework** for evaluating movie performance across audience and financial dimensions.
 
-- Audience reception
-- Audience engagement
-- Revenue and profitability
-- Budget and ROI
-- Production trends
-- Relationships between audience and financial performance
+The dashboard is structured as a four-page **data-storytelling narrative** — each page answers one central question and builds toward the final synthesis in The Verdict.
 
-The dashboard consists of four analytical pages, progressively building toward the final synthesis: **The Verdict**.
+```
+Movie Landscape → Financial Performance → Audience Success → The Verdict
+```
 
 ---
 
 ## 🎯 Business Problem
 
-Success in the film industry is subjective — but different aspects of success can be measured.
+Movie success is routinely reduced to a single metric — box office revenue, audience rating, or ROI. But none of these alone tells the complete story:
 
-Ratings capture audience reception.
-Vote counts and popularity provide signals of engagement.
-Revenue, profit, and ROI measure financial performance.
+- A film can generate substantial revenue but produce little profit
+- A highly rated film can perform poorly financially
+- A micro-budget film can achieve extraordinary ROI while remaining unknown
+- A commercially successful film can carry only average audience ratings
 
-However, these measures do not always tell the same story.
+This analysis asks:
 
-This analysis therefore asks:
-
-> **When audience reception, engagement, and financial performance are evaluated together, what does a truly successful movie look like — and how rare is it?**
+> **Can movie success be better understood by combining audience reception, engagement, and financial performance into a single framework?**
 
 ---
 
@@ -48,19 +45,17 @@ This analysis therefore asks:
 
 | Attribute | Detail |
 |---|---|
-| **Total Records** | 1M+ movies |
-| **Rated Movies** | 360K |
-| **Financially Observable** | 18K with budget + revenue available |
-| **Source** | TMDB (The Movie Database) |
-| **Key Metrics** | Rating, Vote Count, Revenue, Budget, Profit, ROI, Popularity |
+| Total Records | 1.4M+ movie records |
+| Rated Movies | 360K |
+| Financially Observable | 18K (budget + revenue available) |
+| Financially Reliable | ~10K (used for credible ROI analysis) |
+| 25+ Vote Subset | 44K (used for meaningful audience analysis) |
+| Source | TMDB (The Movie Database) |
+| Key Metrics | Rating, Vote Count, Popularity, Revenue, Budget, Profit, ROI |
 
 ### ⚠️ Data Availability
 
-A major finding from the analysis is the significant gap in financial data.
-
-Only approximately **18K movies** contain both budget and revenue information, meaning financial analysis applies to a relatively small subset of the full dataset.
-
-This limitation is treated as an important part of the analysis rather than ignored.
+A major analytical finding is the significant gap in financial data. Only 18K of 1M+ movies contain usable financial information — meaning financial conclusions apply to a small, high-visibility subset, not the global film industry.
 
 ---
 
@@ -68,158 +63,99 @@ This limitation is treated as an important part of the analysis rather than igno
 
 ### Power Query
 - Data cleaning and transformation
-- Duplicate removal
-- Column selection
-- Data type standardisation
-- Dataset preparation
+- Duplicate removal, column selection, type standardisation
+- Invalid date handling (original range: 1800–2099, constrained to 1900–2020)
+- Separating financially usable from unusable records
+- Creating analytical population flags
 
 ### DAX
-- Calculated columns and measures
-- Financial profit
-- ROI
-- Rating bands
-- Vote bands
-- Profitability classification
-- Success quadrant logic
+- Financial profit, ROI, reliable ROI
+- Rating bands and vote bands
+- Profitability and success quadrant classification
+- Median-based KPIs (preferred over averages for skewed distributions)
+- Reference values for scatter plot benchmarks
 
 ### Power BI
-- KPI cards
-- Scatter plots
-- Bubble charts
-- Bar charts
-- Line charts
-- Interactive filtering
-- Custom Success Matrix
-- Multi-page analytical storytelling
+- KPI cards, scatter plots, bubble charts, bar and line charts
+- Logarithmic scaling for financial distribution visuals
+- Reference lines for analytical benchmarks
+- Interactive navigation (BACK / NEXT / HOME)
+- Insight banners — each page states its conclusion in plain language
+- Four-page editorial data-storytelling structure
 
 ---
 
 ## 📑 Dashboard Structure
 
-| Page | Focus | Purpose |
+| Page | Title | Central Question |
 |---|---|---|
-| **01 — Defining Success** | Dataset & Audience | Establishes dataset scale, production history, rating distribution, and vote patterns |
-| **02 — Commercial Success** | Financial Performance | Examines revenue, budget, profit, ROI, and profitability |
-| **03 — Audience Success** | Audience Performance | Explores engagement, ratings, popularity, and relationships with financial performance |
-| **04 — The Verdict** | Success Matrix | Synthesises audience and financial performance into four success classifications |
+| 01 | Defining Success | What does the movie landscape look like, and how should success be measured? |
+| 02 | Commercial Success | Does greater investment translate into greater financial returns? |
+| 03 | Audience Success | Does audience participation translate into stronger ratings and financial outcomes? |
+| 04 | The Verdict | What ultimately defines a successful movie? |
 
 ---
 
 ## 🔎 Key Findings
 
-### 1. Financial Data Availability Is Limited
-
-Only approximately **18K of 1M+ movies** have both budget and revenue data available.
-
-This means financial conclusions must be interpreted within the financially observable subset rather than applied to the entire dataset.
-
-### 2. Movie Production Reached a Peak
-
-Movie releases peaked at approximately **50K per year around 2010**.
-
-The decline after 2015 appears within the dataset and should not automatically be interpreted as a decline in actual industry production.
-
-### 3. Higher Vote Counts Are Associated With Higher Average Ratings
-
-Average ratings increase from approximately **5.8 among movies with 2–5 votes** to **7.2 among movies with 5K+ votes**.
-
-The analysis identifies this as evidence of a **survivorship effect** within the dataset.
-
-### 4. Profitability Is Not the Default
-
-Only approximately **55% of financially observable movies are profitable**.
-
-Even when financial performance can be measured, profitability is far from guaranteed.
-
-### 5. Budget Does Not Guarantee Strong ROI
-
-The analysis identifies an inverse relationship between budget size and ROI.
-
-Lower-budget films can achieve exceptionally high returns, while larger budgets can compress percentage returns.
-
-### 6. Typical Film Profit Is Surprisingly Low
-
-The median film profit is approximately **$148**, even within the analysed audience-engaged segment.
-
-This highlights the large gap between exceptional financial successes and the typical movie outcome.
-
-### 7. Rating Does Not Equal Profit
-
-High audience ratings do not reliably translate into high financial profit.
-
-Audience reception and commercial performance therefore need to be evaluated as related but distinct dimensions.
-
-### 8. Overall Success Is Rare
-
-The **high-rating + high-profit** quadrant is sparsely populated.
-
-Achieving strong performance across both audience and financial dimensions is considerably harder than succeeding on either dimension individually.
+| Finding | Detail |
+|---|---|
+| Data Availability Gap | Only 18K of 1M+ movies have financial data — the majority of global production is financially invisible |
+| Production Growth | Movie releases expanded dramatically from 1900, accelerating sharply from 2000 to 40K+ per year by 2020 |
+| Vote-Rating Link | Average rating rises from 5.8 (2–5 votes) to 7.2 (5K+ votes) — a survivorship effect, not causation |
+| Rating Polarisation | The 7–7.9 band (52K) is smaller than 8+ (69K) — ratings polarise rather than cluster in the middle |
+| Median Film Profit | $148 — despite $563.55bn aggregate profit, the typical film earns near-zero |
+| Profitability Rate | ~55% of financially observable movies are profitable — not the default outcome |
+| Budget vs ROI | Inverse relationship — micro-budget films achieve the highest ROI; large budgets compress toward 0% |
+| Median Reliable ROI | 77% — far more representative than aggregate ROI; P99 reaches 6,949% showing extreme right-skew |
+| Rating ≠ Profit | High ratings do not reliably predict high financial profit |
+| Overall Success is Rare | High rating + high profit quadrant is sparsely populated — achieving both simultaneously is exceptional |
 
 ---
 
 ## 📸 Dashboard Preview
 
 ### 01 — Defining Success
-![Defining Success](Assets/screenshots/defining-success/defining-success.png)
+![Defining Success](Assets/screenshots/defining-success/defining-success-overview.png)
 
 ### 02 — Commercial Success
-![Commercial Success](Assets/screenshots/commercial-success/commercial-success.png)
+![Commercial Success](Assets/screenshots/commercial-success/commercial-success-overview.png)
 
 ### 03 — Audience Success
-![Audience Success](Assets/screenshots/audience-success/audience-success.png)
+![Audience Success](Assets/screenshots/audience-success/audience-success-overview.png)
 
 ### 04 — The Verdict
-![The Verdict](Assets/screenshots/the-verdict/the-verdict.png)
-
----
-
-## 💡 Business Impact
-
-The analysis demonstrates why movie performance should not be evaluated through a single KPI.
-
-A film can be:
-
-- Highly rated but commercially weak
-- Financially successful without exceptional audience ratings
-- Strong in audience engagement but limited financially
-- Strong across both audience and financial dimensions
-
-The **Success Matrix** provides a framework for distinguishing these outcomes.
-
-### Key Business Takeaways
-
-- A multi-dimensional framework provides more context than a single performance KPI
-- Financial data availability must be considered when evaluating movie performance
-- Budget size alone does not determine financial efficiency
-- Audience reception and financial performance are distinct dimensions of success
-- Films performing strongly across both dimensions represent a relatively rare outcome
-
-> *"A successful movie is not simply popular, highly rated, or profitable. It performs strongly across both audience and financial dimensions."*
+![The Verdict](Assets/screenshots/the-verdict/the-verdict-overview.png)
 
 ---
 
 ## 🧩 Success Matrix
 
-The final dashboard synthesises the analysis into four performance classifications:
+The final page synthesises the analysis into four performance classifications:
 
 | Classification | Description |
 |---|---|
-| 🏆 **Overall Success** | Strong audience reception and strong financial performance |
-| ❤️ **Audience Favorite** | Strong audience reception but weaker financial performance |
-| 💰 **Commercial Performer** | Strong financial performance but weaker audience reception |
-| 📉 **Lower Overall Performer** | Weaker performance across both dimensions |
+| 🏆 **Overall Success** | High audience rating + high financial profit |
+| ❤️ **Audience Favourite** | High rating + low financial profit — the most common quadrant |
+| 💰 **Commercial Performer** | Lower rating + high financial profit |
+| 📉 **Lower Overall Performer** | Below median on both dimensions |
 
-This framework is the central output of the analysis and provides a more nuanced definition of movie success.
+The Audience Favourite quadrant is the most densely populated — confirming that audience quality and financial success are related but distinct dimensions that rarely align at the highest level simultaneously.
 
 ---
 
-## 📖 Detailed Analysis Report
+## 💡 Business Impact
 
-For the complete methodology, page-by-page dashboard walkthrough, visual analysis, detailed insights, and strategic recommendations:
+This analysis demonstrates why movie performance should not be evaluated through a single KPI.
 
-📖 **[View Full Analysis Report](Analysis-Report/Defining-Success-Analysis-Report.md)**
+Key takeaways:
+- A multi-metric framework (audience + financial) reveals what single metrics conceal
+- Profit and ROI are different measures — both are needed; neither alone is sufficient
+- Financial data covers only a small fraction of global production — conclusions must be scoped accordingly
+- The median (77% reliable ROI, $148 median profit) is far more representative of typical movie performance than aggregate figures
+- The Success Matrix provides a practical classification tool for studios, analysts, and investors
 
-📄 [Download Full PDF Report](https://drive.google.com/file/d/1VD22lZf7qWX7-dnNxoRY1ZB2Ejow0FZg/view?usp=sharing)
+> *"A successful movie is not simply popular, highly rated, or profitable. It performs strongly across both audience and financial dimensions."*
 
 ---
 
@@ -233,7 +169,6 @@ defining-success-movie-analysis/
 ├── Assets/
 │   ├── cover/
 │   │   └── cover.svg
-│   │
 │   └── screenshots/
 │       ├── defining-success/
 │       ├── commercial-success/
@@ -243,6 +178,26 @@ defining-success-movie-analysis/
 └── Analysis-Report/
     └── Defining_Success_Analysis_Report.md
 ```
+
+---
+
+## 📖 Detailed Analysis Report
+
+For complete methodology, analytical decisions, page-by-page insights, ROI distribution analysis, and the full framework:
+
+📖 **[View Full Analysis Report](Analysis-Report/Defining_Success_Analysis_Report.md)**
+
+---
+
+## 🏅 Competition
+
+**Power BI DataViz World Championships — Final Round**
+
+This project was developed as a competition submission exploring:
+
+> *What makes a successful movie?*
+
+The dashboard combines large-scale data preparation, analytical modelling, and data storytelling to answer the question from multiple perspectives.
 
 ---
 
