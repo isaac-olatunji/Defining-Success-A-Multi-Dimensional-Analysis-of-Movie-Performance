@@ -313,17 +313,6 @@ The redesigned dashboard was deliberately structured as an editorial data-storyt
 
 ---
 
-## What I Would Do Differently
-
-1. Define the analytical framework and populations before building any visuals
-2. Profile the dataset for invalid dates, zero values, and extreme observations before deciding which fields are usable
-3. Identify the correct analytical population for each question separately
-4. Separate the financially observable and financially reliable populations from the start
-5. Create only the measures required by the analytical framework
-6. Design the dashboard after establishing what the evidence actually shows — not before
-
----
-
 ## Recommendations
 
 ### 1. Use a Multi-Metric Framework for Success Evaluation
