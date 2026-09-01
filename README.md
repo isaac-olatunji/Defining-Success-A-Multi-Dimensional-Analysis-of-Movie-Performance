@@ -185,7 +185,7 @@ defining-success-movie-analysis/
 
 For complete methodology, analytical decisions, page-by-page insights, ROI distribution analysis, and the full framework:
 
-📖 **[View Full Analysis Report](Analysis-Report/Defining_Success_Analysis_Report.md)**
+📖 **[View Full Analysis Report](Analysis-Report/Defining-Success-Analysis-Report.md)**
 
 📄 [Download Full PDF Report](https://drive.google.com/file/d/1LYoRP5c1F2si9rss96_FvFwi178iOhVj/view?usp=sharing)
 
