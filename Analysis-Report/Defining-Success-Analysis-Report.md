@@ -124,7 +124,7 @@ The analysis followed a structured Power BI workflow:
 
 ## Page 2: Commercial Success — Financial Performance
 
-![Commercial Success Dashboard](../Assets/screenshots/commercial-success/commercial-success.png)
+![Commercial Success Dashboard](../Assets/screenshots/commercial-success/commercial-success-overview.png)
 
 ### KPI Overview
 
