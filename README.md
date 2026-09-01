@@ -116,16 +116,16 @@ A major analytical finding is the significant gap in financial data. Only 18K of
 ## 📸 Dashboard Preview
 
 ### 01 — Defining Success
-![Defining Success](Assets/screenshots/defining-success/defining-success-overview.png)
+![Defining Success](Assets/screenshots/defining-success/Defining_Success.png)
 
 ### 02 — Commercial Success
-![Commercial Success](Assets/screenshots/commercial-success/commercial-success-overview.png)
+![Commercial Success](Assets/screenshots/commercial-success/Commercial_Success.png)
 
 ### 03 — Audience Success
-![Audience Success](Assets/screenshots/audience-success/audience-success-overview.png)
+![Audience Success](Assets/screenshots/audience-success/Audience_Success.png)
 
 ### 04 — The Verdict
-![The Verdict](Assets/screenshots/the-verdict/the-verdict-overview.png)
+![The Verdict](Assets/screenshots/the-verdict/The_Verdict.png)
 
 ---
 
@@ -187,6 +187,16 @@ For complete methodology, analytical decisions, page-by-page insights, ROI distr
 
 📖 **[View Full Analysis Report](Analysis-Report/Defining_Success_Analysis_Report.md)**
 
+📄 [Download Full PDF Report](https://drive.google.com/file/d/1LYoRP5c1F2si9rss96_FvFwi178iOhVj/view?usp=sharing)
+
+---
+
+## 🔗 Live Dashboard
+
+🌐 **[View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNGJjMzc4ZTctNWU2ZC00YzlhLWFlNzItYzJlMTA4Mjg5ZGVlIiwidCI6IjEzZTNiMTg2LWM0NDYtNGFhYi05YzZkLTlhYjliYjc2ODE2YyIsImMiOjh9&embedImagePlaceholder=true)**
+
+📥 [Download Power BI File (.pbix)](https://drive.google.com/file/d/10IG2ueYEztJbOHcCbNv2gAXXC6DoVTGK/view?usp=share_link)
+
 ---
 
 ## 🏅 Competition
@@ -205,6 +215,7 @@ The dashboard combines large-scale data preparation, analytical modelling, and d
 
 **Isaac Olatunji**
 Business Intelligence Analyst focused on transforming data into actionable business insights through SQL, Power BI, Excel, and data storytelling.
+
 
 🔗 GitHub: [isaac-olatunji]([(https://github.com/isaac-olatunji)])
 🔗 LinkedIn: [olatunjiisaac](https://www.linkedin.com/in/olatunjiisaac)
