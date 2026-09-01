@@ -122,7 +122,7 @@ A major analytical finding is the significant gap in financial data. Only 18K of
 ![Commercial Success](Assets/screenshots/commercial-success/commercial-success-overview.png)
 
 ### 03 — Audience Success
-![Audience Success](Assets/screenshots/audience-success/audience-success-overiew.png)
+![Audience Success](Assets/screenshots/audience-success/audience-success-overview.png)
 
 ### 04 — The Verdict
 ![The Verdict](Assets/screenshots/the-verdict/the-verdict-overview.png)
