@@ -193,7 +193,7 @@ For complete methodology, analytical decisions, page-by-page insights, ROI distr
 
 ## 🔗 Live Dashboard
 
-🌐 **[View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNGJjMzc4ZTctNWU2ZC00YzlhLWFlNzItYzJlMTA4Mjg5ZGVlIiwidCI6IjEzZTNiMTg2LWM0NDYtNGFhYi05YzZkLTlhYjliYjc2ODE2YyIsImMiOjh9&embedImagePlaceholder=true)**
+🌐 **[View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOGNmNDEyMDUtN2NmOS00NTgxLWJhNTMtYjk3MjUwMWE5M2I4IiwidCI6IjEzZTNiMTg2LWM0NDYtNGFhYi05YzZkLTlhYjliYjc2ODE2YyIsImMiOjh9&embedImagePlaceholder=true)**
 
 📥 [Download Power BI File (.pbix)](https://drive.google.com/file/d/10IG2ueYEztJbOHcCbNv2gAXXC6DoVTGK/view?usp=share_link)
 
